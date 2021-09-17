@@ -2,7 +2,7 @@ const { Client, Intents, MessageActionRow, MessageButton, VoiceChannel } = requi
 const { SlashCommandBuilder } = require('@discordjs/builders');
 const { REST } = require('@discordjs/rest');
 const { Routes } = require('discord-api-types/v9');
-const youtubeId = { youtube } = require('./app_ids.json');
+const youtubeId = require('./app_ids.json').youtube;
 require('dotenv').config();
 
 const { clientId, token } = process.env;
