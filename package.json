@@ -1,5 +1,5 @@
 {
-  "name": "yts-bot",
+  "name": "ytsc-bot",
   "version": "0.1.0",
   "description": "YouTube Togetherをスラッシュコマンドから呼ぶだけBOT",
   "main": "index.js",
