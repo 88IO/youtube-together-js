@@ -55,8 +55,7 @@ client.on('interactionCreate', async interaction => {
 
         // 使用するボイスチャンネルまたコマンドオプション
         const voiceChannelId = interaction.member.voice.channel.id;
-        //const max_age = interaction.options.getInteger('max_age');
-        const max_age = 0.01;
+        const max_age = interaction.options.getInteger('max_age');
         const max_uses = interaction.options.getInteger('max_uses');
         let inviteURL;
 
