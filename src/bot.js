@@ -1,4 +1,4 @@
-const { Client, Intents, MessageActionRow, MessageButton, VoiceChannel } = require('discord.js');
+const { Client, Intents, MessageActionRow, MessageButton } = require('discord.js');
 const { SlashCommandBuilder } = require('@discordjs/builders');
 const { REST } = require('@discordjs/rest');
 const { Routes } = require('discord-api-types/v9');
@@ -8,7 +8,7 @@ require('dotenv').config();
 const { clientId, token } = process.env;
 
 // クライアント生成
-const client = new Client({ intents: [Intents.FLAGS.GUILDS] });
+const client = new Client({ intents: [Intents.FLAGS.GUILDS, Intents.FLAGS.GUILD_VOICE_STATES] });
 const rest = new REST({ version: '9' }).setToken(token);
 
 // グローバルコマンド定義
